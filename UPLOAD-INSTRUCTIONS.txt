@@ -1,0 +1,11 @@
+PRO Gamer BD Website — GitHub Upload
+
+Upload these three files to the root of your repository:
+1. index.html
+2. hero.png
+3. PRO-Gamer-BD-v3.3.apk
+
+Do not upload any keystore, password, Admin APK, or Firebase secret.
+
+When a new User APK is ready, keep the same signing keystore, increase the
+Version Code, update the website version text, and replace the APK file.
