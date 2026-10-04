@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#05051d">
+    <meta name="description" content="PRO Gamer BD-এর অফিসিয়াল APK Download, Ludo King ও Carrom Pool Tutorial এবং Account Safety Guide।">
+    <meta property="og:title" content="PRO Gamer BD — Official Website">
+    <meta property="og:description" content="Official APK Download, Tutorial ও নিরাপত্তা নির্দেশনা।">
+    <title>PRO Gamer BD — Official Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2305051d'/%3E%3Cpath d='M16 22h32v20H16z' fill='none' stroke='%2322d3ee' stroke-width='5'/%3E%3Ccircle cx='24' cy='32' r='3' fill='%23fff'/%3E%3Cpath d='M40 28v8M36 32h8' stroke='%23a855f7' stroke-width='4'/%3E%3C/svg%3E">
+    <style>
+      :root {
+        --bg:#05051d;
+        --surface:#0d1031;
+        --surface2:#121640;
+        --text:#fff;
+        --muted:#c7c9de;
+        --cyan:#22d3ee;
+        --purple:#9b5cff;
+        --line:#292e63;
+        --green:#36d399
+      }
+
+      * {
+        box-sizing:border-box
+      }
+
+      html {
+        scroll-behavior:smooth
+      }
+
+      body {
+        margin:0;
+        background:radial-gradient(circle at 50% -10%,#253073 0,transparent 36%),var(--bg);
+        color:var(--text);
+        font-family:"Hind Siliguri",system-ui,sans-serif;
+        font-size:17px;
+        line-height:1.65
+      }
+
+      a {
+        color:inherit;
+        text-decoration:none
+      }
+
+      .wrap {
+        width:min(1080px,calc(100% - 32px));
+        margin:auto
+      }
+
+      .nav {
+        position:sticky;
+        top:0;
+        z-index:20;
+        background:rgba(5,5,29,.86);
+        border-bottom:1px solid rgba(255,255,255,.08);
+        backdrop-filter:blur(16px)
+      }
+
+      .navin {
+        height:66px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between
+      }
+
+      .brand {
+        display:flex;
+        align-items:center;
+        gap:10px;
+        font-weight:700
+      }
+
+      .logo {
+        width:40px;
+        height:40px;
+        border-radius:13px;
+        display:grid;
+        place-items:center;
+        background:linear-gradient(135deg,var(--cyan),var(--purple));
+        font:700 21px Rajdhani;
+        color:#05051d;
+        box-shadow:0 0 28px rgba(34,211,238,.25)
+      }
+
+      .navlinks {
+        display:flex;
+        gap:22px;
+        color:var(--muted);
+        font-size:15px
+      }
+
+      .navlinks a:hover {
+        color:#fff
+      }
+
+      .hero {
+        padding:34px 0 74px
+      }
+
+      .heroArt {
+        position:relative;
+        overflow:hidden;
+        border:1px solid #343a78;
+        border-radius:28px;
+        min-height:430px;
+        background:linear-gradient(90deg,rgba(5,5,29,.95),rgba(5,5,29,.32)),url("hero.png") center/cover;
+        box-shadow:0 28px 80px rgba(0,0,0,.42)
+      }
+
+      .heroContent {
+        position:relative;
+        z-index:2;
+        display:flex;
+        min-height:430px;
+        max-width:600px;
+        padding:58px;
+        flex-direction:column;
+        justify-content:center
+      }
+
+      .kicker {
+        display:inline-flex;
+        width:max-content;
+        align-items:center;
+        gap:8px;
+        padding:7px 12px;
+        border:1px solid rgba(34,211,238,.36);
+        border-radius:999px;
+        color:#c8f8ff;
+        background:rgba(5,5,29,.58);
+        font-size:13px;
+        font-weight:700;
+        letter-spacing:.08em;
+        text-transform:uppercase
+      }
+
+      .kicker:before {
+        content:"";
+        width:8px;
+        height:8px;
+        border-radius:50%;
+        background:var(--green);
+        box-shadow:0 0 12px var(--green)
+      }
+
+      h1,h2,h3,p {
+        margin-top:0
+      }
+
+      .hero h1 {
+        font-family:Rajdhani,"Hind Siliguri",sans-serif;
+        font-size:clamp(46px,8vw,82px);
+        line-height:.96;
+        margin:20px 0 14px;
+        letter-spacing:-.02em
+      }
+
+      .hero h1 span {
+        display:block;
+        color:var(--cyan)
+      }
+
+      .lead {
+        color:#eef0ff;
+        max-width:540px;
+        font-size:20px;
+        line-height:1.55
+      }
+
+      .actions {
+        display:flex;
+        gap:12px;
+        flex-wrap:wrap;
+        margin-top:12px
+      }
+
+      .btn {
+        min-height:54px;
+        border-radius:15px;
+        padding:14px 21px;
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        border:1px solid var(--line);
+        font-weight:700;
+        font-size:17px;
+        transition:.2s transform,.2s box-shadow
+      }
+
+      .btn:hover {
+        transform:translateY(-2px)
+      }
+
+      .primary {
+        color:#04051d;
+        background:linear-gradient(135deg,var(--cyan),#7dd3fc);
+        border:0;
+        box-shadow:0 14px 34px rgba(34,211,238,.24)
+      }
+
+      .secondary {
+        background:rgba(10,12,46,.78)
+      }
+
+      .meta {
+        display:flex;
+        gap:10px;
+        flex-wrap:wrap;
+        margin-top:18px;
+        color:var(--muted);
+        font-size:14px
+      }
+
+      .meta span {
+        padding:5px 10px;
+        border-radius:99px;
+        background:rgba(5,5,29,.7);
+        border:1px solid rgba(255,255,255,.12)
+      }
+
+      section {
+        padding:72px 0
+      }
+
+      .heading {
+        max-width:700px;
+        margin-bottom:28px
+      }
+
+      .eyebrow {
+        font-family:Rajdhani,sans-serif;
+        color:var(--cyan);
+        font-size:15px;
+        font-weight:700;
+        letter-spacing:.15em
+      }
+
+      .title {
+        font-size:clamp(31px,5vw,48px);
+        line-height:1.12;
+        margin:6px 0 10px
+      }
+
+      .sub {
+        color:var(--muted);
+        margin:0
+      }
+
+      .grid {
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:18px
+      }
+
+      .card {
+        padding:24px;
+        border:1px solid var(--line);
+        border-radius:22px;
+        background:linear-gradient(150deg,var(--surface2),var(--surface));
+        box-shadow:0 16px 38px rgba(0,0,0,.16)
+      }
+
+      .num {
+        width:42px;
+        height:42px;
+        border-radius:13px;
+        display:grid;
+        place-items:center;
+        background:rgba(34,211,238,.13);
+        color:var(--cyan);
+        font-family:Rajdhani;
+        font-weight:700
+      }
+
+      .card h3 {
+        font-size:22px;
+        margin:15px 0 6px
+      }
+
+      .card p {
+        color:var(--muted);
+        margin-bottom:0
+      }
+
+      .games {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px
+      }
+
+      .game {
+        position:relative;
+        overflow:hidden;
+        min-height:300px;
+        padding:30px;
+        border:1px solid var(--line);
+        border-radius:26px;
+        background:var(--surface)
+      }
+
+      .game:after {
+        content:"";
+        position:absolute;
+        width:210px;
+        height:210px;
+        border-radius:50%;
+        right:-70px;
+        bottom:-80px;
+        filter:blur(3px)
+      }
+
+      .game.ludo:after {
+        background:rgba(34,211,238,.15)
+      }
+
+      .game.carrom:after {
+        background:rgba(168,85,247,.18)
+      }
+
+      .gameIcon {
+        font-size:58px
+      }
+
+      .game h3 {
+        font-family:Rajdhani,"Hind Siliguri";
+        font-size:36px;
+        margin:10px 0 6px
+      }
+
+      .game p {
+        color:var(--muted);
+        max-width:420px
+      }
+
+      .game .btn {
+        position:relative;
+        z-index:2;
+        margin-top:12px
+      }
+
+      .steps {
+        counter-reset:steps
+      }
+
+      .step {
+        position:relative;
+        padding-left:70px
+      }
+
+      .step:before {
+        counter-increment:steps;
+        content:"0" counter(steps);
+        position:absolute;
+        left:22px;
+        top:24px;
+        color:var(--purple);
+        font-family:Rajdhani;
+        font-size:20px;
+        font-weight:700
+      }
+
+      .safety {
+        display:grid;
+        grid-template-columns:.8fr 1.2fr;
+        gap:22px;
+        align-items:stretch
+      }
+
+      .safetyTitle {
+        padding:30px;
+        border-radius:24px;
+        background:linear-gradient(145deg,#272267,#11143b);
+        border:1px solid #464b8e
+      }
+
+      .shield {
+        font-size:48px
+      }
+
+      .checklist {
+        padding:27px;
+        border-radius:24px;
+        background:var(--surface);
+        border:1px solid var(--line)
+      }
+
+      .check {
+        display:flex;
+        gap:13px;
+        margin:12px 0;
+        color:var(--muted)
+      }
+
+      .check b {
+        color:var(--cyan)
+      }
+
+      .support {
+        padding:34px;
+        border-radius:28px;
+        border:1px solid #3c4382;
+        background:radial-gradient(circle at 90% 10%,rgba(168,85,247,.22),transparent 35%),var(--surface);
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:24px
+      }
+
+      .support p {
+        margin:0;
+        color:var(--muted)
+      }
+
+      footer {
+        padding:34px 0;
+        border-top:1px solid var(--line);
+        color:var(--muted)
+      }
+
+      .foot {
+        display:flex;
+        justify-content:space-between;
+        gap:16px;
+        flex-wrap:wrap
+      }
+
+      .warning {
+        font-size:13px;
+        color:#9da0bf;
+        margin-top:8px
+      }
+
+      @media(max-width:760px) {
+        body {
+          font-size:16px
+        }
+
+        .navlinks {
+          display:none
+        }
+
+        .hero {
+          padding:20px 0 48px
+        }
+
+        .heroArt {
+          min-height:590px;
+          background:linear-gradient(180deg,rgba(5,5,29,.04) 0,rgba(5,5,29,.42) 38%,rgba(5,5,29,.98) 64%),url("hero.png") 50% 0/auto 52% no-repeat,var(--surface)
+        }
+
+        .heroContent {
+          min-height:590px;
+          padding:245px 22px 28px;
+          justify-content:flex-end
+        }
+
+        .lead {
+          font-size:18px
+        }
+
+        .actions {
+          display:grid
+        }
+
+        .btn {
+          width:100%
+        }
+
+        .grid,.games,.safety {
+          grid-template-columns:1fr
+        }
+
+        .game {
+          min-height:270px
+        }
+
+        section {
+          padding:52px 0
+        }
+
+        .support {
+          align-items:flex-start;
+          flex-direction:column
+        }
+
+        .support .btn {
+          width:100%
+        }
+
+        .foot {
+          display:block;
+          text-align:center
+        }
+
+        .foot span {
+          display:block;
+          margin-top:6px
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap navin">
+        <a class="brand" href="#top">
+          <span class="logo">PG</span>
+          <span>PRO Gamer BD</span>
+        </a>
+        <nav class="navlinks" aria-label="প্রধান নেভিগেশন">
+          <a href="#download">Download</a>
+          <a href="#games">Games</a>
+          <a href="#guide">Guide</a>
+          <a href="#support">Support</a>
+        </nav>
+      </div>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div class="wrap">
+          <div class="heroArt">
+            <div class="heroContent">
+              <span class="kicker">Official Website</span>
+              <h1>PRO GAMER <span>BD</span>
+              </h1>
+              <p class="lead">Ludo King ও Carrom Pool খেলুন একটি সহজ ও নিরাপদ Gaming Platform-এ। App Download করুন, Account তৈরি করুন এবং Available Free Tournament-এ অংশগ্রহণ করুন।</p>
+              <div class="actions">
+                <a class="btn primary" href="PRO-Gamer-BD-v3.2.apk" download>APK Download করুন</a>
+                <a class="btn secondary" href="#guide">ব্যবহারবিধি দেখুন</a>
+              </div>
+              <div class="meta">
+                <span>Version 3.2</span>
+                <span>Android App</span>
+                <span>Signed APK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="download">
+        <div class="wrap">
+          <div class="heading">
+            <span class="eyebrow">SAFE DOWNLOAD</span>
+            <h2 class="title">অফিসিয়াল App Download</h2>
+            <p class="sub">শুধু এই Website-এর Download Button থেকে সর্বশেষ Signed APK নিন।</p>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <span class="num">01</span>
+              <h3>APK Download</h3>
+              <p>উপরের Download Button চাপলে সরাসরি App ফাইল Download হবে।</p>
+            </article>
+            <article class="card">
+              <span class="num">02</span>
+              <h3>Install করুন</h3>
+              <p>Browser অনুমতি চাইলে নিরাপদভাবে Allow করে APK Install সম্পন্ন করুন।</p>
+            </article>
+            <article class="card">
+              <span class="num">03</span>
+              <h3>Account তৈরি</h3>
+              <p>নিজের সচল Gmail ও সঠিক তথ্য ব্যবহার করে Email Verification সম্পন্ন করুন।</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="games">
+        <div class="wrap">
+          <div class="heading">
+            <span class="eyebrow">OUR GAMES</span>
+            <h2 class="title">আপনার পছন্দের Game</h2>
+            <p class="sub">Match-এর সময়, ধরন এবং Player Need যাচাই করে Join করুন।</p>
+          </div>
+          <div class="games">
+            <article class="game ludo">
+              <div class="gameIcon">🎲</div>
+              <h3>LUDO KING</h3>
+              <p>Solo Match খেলুন। সফলভাবে Joined User-রাই Room Code ও Match Notification পাবেন।</p>
+              <!-- পরে LUDO_VIDEO_ID-এর জায়গায় আপনার Ludo YouTube Video ID বসাবেন -->
+              <a class="btn secondary" href="https://youtu.be/LUDO_VIDEO_ID" target="_blank" rel="noopener noreferrer">Ludo Tutorial দেখুন</a>
+            </article>
+            <article class="game carrom">
+              <div class="gameIcon">🎯</div>
+              <h3>CARROM POOL</h3>
+              <p>Solo Match-এ Join করুন। Match পূর্ণ হলে নির্ধারিত User-রা Room Code ও Notification পাবেন।</p>
+              <!-- পরে CARROM_VIDEO_ID-এর জায়গায় আপনার Carrom YouTube Video ID বসাবেন -->
+              <a class="btn secondary" href="https://youtu.be/CARROM_VIDEO_ID" target="_blank" rel="noopener noreferrer">Carrom Tutorial দেখুন</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="guide">
+        <div class="wrap">
+          <div class="heading">
+            <span class="eyebrow">GET STARTED</span>
+            <h2 class="title">শুরু করবেন যেভাবে</h2>
+          </div>
+          <div class="grid steps">
+            <article class="card step">
+              <h3>Download</h3>
+              <p>Official Website থেকে PRO Gamer BD APK Download ও Install করুন।</p>
+            </article>
+            <article class="card step">
+              <h3>Create Account</h3>
+              <p>সচল Gmail দিয়ে Account তৈরি করে Verification Link থেকে Email Verify করুন।</p>
+            </article>
+            <article class="card step">
+              <h3>Play</h3>
+              <p>Login করে Available Free Match নির্বাচন করুন এবং নিয়ম মেনে Join করুন।</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="tutorials">
+        <div class="wrap">
+          <div class="heading">
+            <span class="eyebrow">VIDEO GUIDE</span>
+            <h2 class="title">Tutorial Videos</h2>
+            <p class="sub">Download, Account Create এবং Match Join করার ভিডিও এখানে যুক্ত হবে।</p>
+          </div>
+          <div class="games">
+            <article class="game ludo">
+              <div class="gameIcon">▶️</div>
+              <h3>DOWNLOAD &amp; ACCOUNT</h3>
+              <p>APK Install, Account Create এবং Email Verification Guide।</p>
+              <!-- পরে ACCOUNT_VIDEO_ID-এর জায়গায় আপনার Account Guide YouTube Video ID বসাবেন -->
+              <a class="btn secondary" href="https://youtu.be/ACCOUNT_VIDEO_ID" target="_blank" rel="noopener noreferrer">Account Video দেখুন</a>
+            </article>
+            <article class="game carrom">
+              <div class="gameIcon">📱</div>
+              <h3>MATCH JOIN GUIDE</h3>
+              <p>Ludo King ও Carrom Pool Match-এ Join করার নিয়ম।</p>
+              <!-- পরে MATCH_JOIN_VIDEO_ID-এর জায়গায় আপনার Match Join YouTube Video ID বসাবেন -->
+              <a class="btn secondary" href="https://youtu.be/MATCH_JOIN_VIDEO_ID" target="_blank" rel="noopener noreferrer">Match Join Video দেখুন</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="safety">
+        <div class="wrap safety">
+          <div class="safetyTitle">
+            <div class="shield">🛡️</div>
+            <span class="eyebrow">ACCOUNT SAFETY</span>
+            <h2 class="title">আপনার Account নিরাপদ রাখুন</h2>
+            <p class="sub">Admin কখনো আপনার Password বা OTP চাইবে না।</p>
+          </div>
+          <div class="checklist">
+            <div class="check">
+              <b>✓</b>
+              <span>Password, OTP এবং Account Information কারও সঙ্গে শেয়ার করবেন না।</span>
+            </div>
+            <div class="check">
+              <b>✓</b>
+              <span>Fake Account, Cheating বা Edited Screenshot ব্যবহার করবেন না।</span>
+            </div>
+            <div class="check">
+              <b>✓</b>
+              <span>কোনো Request পাঠানোর পর একই Button বারবার চাপবেন না।</span>
+            </div>
+            <div class="check">
+              <b>✓</b>
+              <span>অপরিচিত Website বা ব্যক্তির পাঠানো APK Install করবেন না।</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="support">
+        <div class="wrap">
+          <div class="support">
+            <div>
+              <span class="eyebrow">NEED HELP?</span>
+              <h2 class="title">সহায়তা প্রয়োজন?</h2>
+              <p>App Download, Account Verification অথবা Match সংক্রান্ত সমস্যায় App-এর Support/Message অপশন থেকে Admin-এর সঙ্গে যোগাযোগ করুন।</p>
+            </div>
+            <a class="btn primary" href="#top">উপরে ফিরে যান</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <strong>PRO Gamer BD Team</strong>
+        <span>© 2026 · Official Download &amp; Tutorial</span>
+        <p class="warning">APK SHA-256: aa915aa000feb2c8…17614f680</p>
+      </div>
+    </footer>
+  </body>
+</html>
