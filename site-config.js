@@ -4,8 +4,8 @@
 // =============================================================
 
 window.PRO_GAMER_BD_CONFIG = {
-  appVersion: "3.3",
-  apkFile: "PRO-Gamer-BD-v3.3.apk",
+  appVersion: "3.4",
+  apkFile: "PRO-Gamer-BD-v3.4.apk",
 
   // কোনো Video-এর নিজস্ব link না থাকলে এই Facebook Page link খুলবে।
   facebookPage: "https://www.facebook.com/share/14p9jPTmXhv/",
